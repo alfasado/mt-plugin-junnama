@@ -1,0 +1,15 @@
+name: Junnama
+id:   Junnama
+key:  junnama
+l10n_class: Junnama::L10N
+applications:
+    cms:
+        menus:
+            tools:junnama:
+                label: Check Junnama
+                order: 100
+                mode: junnama
+                system_permission: administer
+                view: system
+        methods:
+            junnama: $junnama::Junnama::Plugin::_junnama

@@ -1,0 +1,22 @@
+<__trans_section component="Junnama">
+<mt:include name="include/header.tmpl">
+
+<mt:Feed uri="http://search.twitter.com/search.rss?q=from:junnama">
+<h2><$mt:FeedTitle$></h2>
+<ul>
+<mt:FeedEntries>
+    <li><a href="<$mt:FeedEntryLink encode_html="1"$>"><$mt:FeedEntryTitle$></a></li>
+</mt:FeedEntries>
+</ul>
+</mt:Feed>
+
+<mt:Feed uri="http://junnama.alfasado.net/online/index.xml">
+<h2><$mt:FeedTitle$></h2>
+<ul>
+<mt:FeedEntries>
+    <li><a href="<$mt:FeedEntryLink encode_html="1"$>"><$mt:FeedEntryTitle$></a></li>
+</mt:FeedEntries>
+</ul>
+</mt:Feed>
+<mt:include name="include/footer.tmpl">
+</__trans_section>
